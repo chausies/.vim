@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/ajay/Documents/Rails Stuff/grading_app/db/migrate'
+let g:netrw_dirhist_2='/home/ajay/Documents/Rails Stuff/grading_app'
+let g:netrw_dirhist_3='/home/ajay/Documents/Rails Stuff/grading_app/db/migrate'
+let g:netrw_dirhist_4='/home/ajay/Documents/Rails Stuff/grading_app'
+let g:netrw_dirhist_5='/home/ajay/Documents/Rails Stuff/grading_app/app/assets/javascripts'
+let g:netrw_dirhist_6='/home/ajay/Documents/Rails Stuff/grading_app'
+let g:netrw_dirhist_7='/home/ajay/Documents/Rails Stuff/grading_app/app/assets/javascripts'
+let g:netrw_dirhist_8='/home/ajay/Documents'
+let g:netrw_dirhist_9='/home/ajay/Documents/Rails Stuff/grading_app/app/models/concerns'
