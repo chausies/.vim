@@ -1,8 +1,8 @@
 execute pathogen#infect()
 syntax on
-filetype plugin on
+filetype plugin indent on
 
-let mapleader = "\<Space>"
+let mapleader = " "
 set nu
 
 autocmd Filetype ruby setl ts=2 sts=2 sw=2
