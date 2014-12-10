@@ -12,3 +12,4 @@ git submodule add https://github.com/tpope/vim-repeat
 git submodule add https://github.com/xolox/vim-session
 git submodule add https://github.com/tpope/vim-surround
 git submodule add https://github.com/Valloric/YouCompleteMe
+git submodule add https://github.com/SirVer/ultisnips
