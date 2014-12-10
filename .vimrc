@@ -6,6 +6,7 @@ let mapleader = " "
 set nu
 
 autocmd Filetype ruby setl ts=2 sts=2 sw=2
+autocmd Filetype python setl ts=2 sts=2 sw=2
 
 " Turn off vi compatibility
 set nocompatible
@@ -41,8 +42,6 @@ runtime macros/matchit.vim
 
 " Session stuff
 let g:session_autoload = 'yes'
-
-
 
 " Useful shortcuts
 nmap <S-Enter> O<Esc>j
