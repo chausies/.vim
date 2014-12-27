@@ -8,13 +8,6 @@ set nu
 autocmd Filetype ruby setl ts=2 sts=2 sw=2
 autocmd Filetype python setl ts=2 sts=2 sw=2
 
-" Autowrap Comments
-fu! SetCommentAutowrap()
-	set tw=75
-	set fo=cq
-endfu
-
-autocmd BufNewFile,BufRead *.* call SetCommentAutowrap()
 
 " Turn off vi compatibility
 set nocompatible
@@ -86,3 +79,12 @@ if exists("+showtabline")
      set tabline=%!MyTabLine()
 endif
 
+" Autowrap Comments
+fu! SetCommentAutowrap()
+	set tw=75
+	set fo=cq
+endfu
+
+autocmd BufNewFile,BufRead *.* call SetCommentAutowrap()
+
+set ts=2 sts=2 sw=2

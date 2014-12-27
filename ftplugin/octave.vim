@@ -665,7 +665,7 @@ if version >= 508 || !exists("did_octave_syntax_inits")
 " Optional highlighting
   HiLink octaveOperator                Operator
   HiLink octaveIdentifier              Identifier
-  HiLink octaveTab                     Error
+  " HiLink octaveTab                     Error
 
   delcommand HiLink
 endif
