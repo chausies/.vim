@@ -35,6 +35,10 @@ map <F9> :call RunFile()<CR>
 " nmap <Leader>a <Plug>(EasyAlign)
 " vmap <Leader>a <Plug>(EasyAlign)
 
+" Tabular shortcuts
+nmap <Leader>a :Tabularize /
+vmap <Leader>a :Tabularize /
+
 " Rails vim stuff
 autocmd BufReadPost *
     \ if line("'\"") > 0 && line("'\"") <= line("$") |
