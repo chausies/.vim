@@ -5,8 +5,8 @@ filetype plugin indent on
 let mapleader = " "
 set nu
 
-autocmd Filetype ruby setl ts=2 sts=2 sw=2
-autocmd Filetype python setl ts=2 sts=2 sw=2
+" autocmd Filetype ruby setl ts=2 sts=2 sw=2
+" autocmd Filetype python setl ts=2 sts=2 sw=2
 
 
 " Turn off vi compatibility
@@ -20,6 +20,7 @@ filetype indent on
 
 colorscheme neon
 
+" Press F9 to run file
 fu! RunFile()
     let tempfile = "~/temp/temptemptemp" . @% 
     execute "w! " . tempfile
@@ -30,9 +31,9 @@ endfu
 map <F9> :call RunFile()<CR>
 
 
-" EasyAlign shortcuts
-nmap <Leader>a <Plug>(EasyAlign)
-vmap <Leader>a <Plug>(EasyAlign)
+" " EasyAlign shortcuts
+" nmap <Leader>a <Plug>(EasyAlign)
+" vmap <Leader>a <Plug>(EasyAlign)
 
 " Rails vim stuff
 autocmd BufReadPost *
