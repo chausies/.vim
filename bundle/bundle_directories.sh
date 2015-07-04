@@ -2,7 +2,6 @@ git submodule add https://github.com/tomtom/tcomment_vim
 git submodule add https://github.com/tpope/vim-rails
 git submodule add https://github.com/tpope/vim-bundler.git
 git submodule add https://github.com/kchmck/vim-coffee-script
-git submodule add https://github.com/junegunn/vim-easy-align
 git submodule add https://github.com/Lokaltog/vim-easymotion
 git submodule add https://github.com/tpope/vim-endwise
 git submodule add https://github.com/groenewege/vim-less
@@ -14,3 +13,4 @@ git submodule add https://github.com/tpope/vim-surround
 git submodule add https://github.com/Valloric/YouCompleteMe
 git submodule add https://github.com/SirVer/ultisnips
 git submodule add https://github.com/JuliaLang/julia-vim
+git submodule add https://github.com/godlygeek/tabular
