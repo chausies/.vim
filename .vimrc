@@ -97,4 +97,3 @@ set ts=2 sts=2 sw=2
 
 " Make julia thingy not mess with tab
 au VimEnter * call LaTeXtoUnicode#Disable()
-
