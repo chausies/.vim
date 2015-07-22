@@ -5,8 +5,7 @@ filetype plugin indent on
 let mapleader = " "
 set nu
 
-" autocmd Filetype ruby setl ts=2 sts=2 sw=2
-" autocmd Filetype python setl ts=2 sts=2 sw=2
+au VimEnter * set ts=2 sts=2 sw=2
 
 
 " Turn off vi compatibility
@@ -30,10 +29,6 @@ endfu
 
 map <F9> :call RunFile()<CR>
 
-
-" " EasyAlign shortcuts
-" nmap <Leader>a <Plug>(EasyAlign)
-" vmap <Leader>a <Plug>(EasyAlign)
 
 " Tabular shortcuts
 nmap <Leader>a :Tabularize /
@@ -92,8 +87,6 @@ fu! SetCommentAutowrap()
 endfu
 
 autocmd BufNewFile,BufRead *.* call SetCommentAutowrap()
-
-set ts=2 sts=2 sw=2
 
 " Make julia thingy not mess with tab
 au VimEnter * call LaTeXtoUnicode#Disable()
