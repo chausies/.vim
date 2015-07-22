@@ -48,6 +48,11 @@ let g:session_autoload = 'yes'
 " Useful shortcuts
 nmap <S-Enter> O<Esc>j
 nmap <CR> o<Esc>k
+" banner comments
+autocmd FileType vim map <leader>b I"<Del>  <Esc>A  "<Del><Esc>yyp0lv$hhr"yykPjj
+autocmd FileType javascript,php,c map <leader>b I//  <Esc>A  //<Esc>yyp0llv$hhhr-yykPjj
+autocmd FileType python,ruby,sh,zsh map <leader>b I#  <Esc>A  #<Esc>yyp0lv$hhr-yykPjj
+autocmd FileType css map <leader>b I/*  <Esc>A  */<Esc>yyp0llv$r-$hc$*/<Esc>yykPjj
 
 " Show tab number stuff
 if exists("+showtabline")
