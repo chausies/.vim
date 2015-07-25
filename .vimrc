@@ -51,12 +51,13 @@ nmap <CR> o<Esc>k
 
 " banner comments
 fu! Banner(opt)
-	normal! '<^
 	let l:l1 = line("'<")
 	let l:l2 = line("'>")
-	let l:spac = col(".") - 1
+	let l:spac = indent(line("."))-1
 	let l:lines = getline(l:l1, l:l2)
-	normal! V'>d
+	exe substitute(
+				\ substitute('%1d%2', "%1", l:l1, ""),
+				\ "%2", l:l2-l:l1+1, "")
 	let l:maxim = 0
 	for l in l:lines
 		if len(l) > l:maxim + l:spac
