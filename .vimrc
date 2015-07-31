@@ -5,7 +5,7 @@ filetype plugin indent on
 let mapleader = " "
 set nu
 
-au VimEnter * set ts=2 sts=2 sw=2
+au VimEnter * set ts=2 sts=2 sw=2 et
 
 
 " Turn off vi compatibility
@@ -18,6 +18,9 @@ set autoindent
 filetype indent on
 
 colorscheme neon
+
+" auto-close html tags
+iabbrev </ </<C-X><C-O>
 
 " Press F9 to run file
 fu! RunFile()
