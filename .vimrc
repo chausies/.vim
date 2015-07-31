@@ -20,7 +20,7 @@ filetype indent on
 colorscheme neon
 
 " auto-close html tags
-iabbrev </ </<C-X><C-O>
+ia </ </<C-X><C-O>
 
 " Press F9 to run file
 fu! RunFile()
