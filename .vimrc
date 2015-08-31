@@ -144,6 +144,7 @@ fu! SetCommentAutowrap()
 endfu
 autocmd BufNewFile,BufRead *.* call SetCommentAutowrap()
 
+" NextIndent
 " Jump to the next or previous line that has the same level or a lower
 " level of indentation than the current line.
 "
@@ -190,6 +191,37 @@ onoremap <silent> [l :call NextIndent(0, 0, 0, 1)<CR>
 onoremap <silent> ]l :call NextIndent(0, 1, 0, 1)<CR>
 onoremap <silent> [L :call NextIndent(1, 0, 1, 1)<CR>
 onoremap <silent> ]L :call NextIndent(1, 1, 1, 1)<CR>
+
+" Python function signature to docstring
+" Hit <leader><leader>d while on a function signature to auto-load
+" a docstring template
+fu! Sig2Docstring()
+  let l:winview = winsaveview()
+  exe "normal! o\"\"\"concise_description\<cr>
+        \\<cr>
+        \in-depth_description\<cr>
+        \\<cr>
+        \Parameters\<cr>
+        \----------\<cr>
+        \p1 : type1\<cr>
+        \  description_of_p1\<cr>
+        \\<cr>
+        \\<BS>Returns\<cr>
+        \-------\<cr>
+        \r1 : type1\<cr>
+        \  description_of_r1\<cr>
+        \\<cr>
+        \\<BS>Examples\<cr>
+        \--------\<cr>
+        \description_of_example\<cr>
+        \\<cr>
+        \>>> PYTHON_CODE\<cr>
+        \\"\"\"\<cr>
+        \return 'NOT YET IMPLEMENTED'\<cr>\<Esc>"
+  call winrestview(l:winview)
+endfu
+
+nnoremap <silent> <leader><leader>d :call Sig2Docstring()<CR>
 
 " Make julia thingy not mess with tab
 au VimEnter * call LaTeXtoUnicode#Disable()
