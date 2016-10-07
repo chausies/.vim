@@ -11,7 +11,7 @@ au VimEnter * set ts=2 sts=2 sw=2 et
 " Turn off vi compatibility
 set nocompatible
 
-set cindent
+set nocindent
 set autoindent
 
 " load indent file for the current filetype
