@@ -227,5 +227,5 @@ nnoremap <silent> <leader><leader>d :call Sig2Docstring()<CR>
 au VimEnter * call LaTeXtoUnicode#Disable()
 
 " Make < and > not exit visual mode
-vmap <Tab> >gv
-vmap <S-Tab> <gv
+autocmd VimEnter * vnoremap <Tab> >gv
+autocmd VimEnter * vnoremap <S-Tab> <gv
