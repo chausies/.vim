@@ -229,3 +229,7 @@ au VimEnter * call LaTeXtoUnicode#Disable()
 " Make < and > not exit visual mode
 autocmd VimEnter * vnoremap <Tab> >gv
 autocmd VimEnter * vnoremap <S-Tab> <gv
+
+nnoremap 0 ^
+nnoremap ^ 0
+
