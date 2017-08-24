@@ -1,11 +1,13 @@
 execute pathogen#infect()
 syntax on
+filetype on
 filetype plugin indent on
 
 let mapleader = " "
 set nu
 
 au VimEnter * set ts=2 sts=2 sw=2 et
+au BufNewFile,BufRead * set ts=2 sts=2 sw=2 et
 
 
 " Turn off vi compatibility
