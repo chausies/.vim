@@ -26,7 +26,7 @@ ia </ </<C-X><C-O>
 
 " Press F9 to run file
 fu! RunFile()
-    let tempfile = "~/temp/temptemptemp" . @% 
+    let tempfile = expand('%:p:h') . "/temptemptemptemptemp" . expand('%:t')
     execute "w! " . tempfile
     execute "w !" . &filetype . " " . tempfile
     call delete(expand(tempfile))
