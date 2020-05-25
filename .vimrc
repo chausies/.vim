@@ -29,8 +29,12 @@ fu! RunFile()
     let tempfile = expand('%:p:h') . "/temptemptemptemptemp" . expand('%:t')
     " Make it so directories with spaces work fine
     let tempfile = join(split(tempfile, " "), "\\ ")
+    let myft = &filetype
+    if myft == "python"
+        let myft = "python3"
+    endif
     execute "w! " . tempfile
-    execute "w !" . &filetype . " " . tempfile
+    execute "w !" . myft . " " . tempfile
     call delete(expand(tempfile))
 endfu
 
