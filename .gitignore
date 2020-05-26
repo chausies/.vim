@@ -1,4 +1,4 @@
-view/
-sessions/
+bundle/*
+~bundle/Vundle.vim
 *.sw[a-z]
 .netrwhist
