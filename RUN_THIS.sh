@@ -1,6 +1,6 @@
 cd ~/.vim
 ln -s ~/.vim/.vimrc ~/.vimrc
-git submodule update --init --recursive --remote
+git submodule update --init bundle/Vundle.vim
 sh update_plugins.sh
 cd bundle/YouCompleteMe/
 # No rust-completer
