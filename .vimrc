@@ -24,6 +24,7 @@ Plugin 'tpope/vim-endwise'
 Plugin 'xolox/vim-misc'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets' " Useful for Ultisnips
 Plugin 'xolox/vim-session'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'JuliaLang/julia-vim'
@@ -82,6 +83,12 @@ endfu
 
 map <F9> :call RunFile()<CR>
 
+" UltiSnips commands
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+let g:UltiSnipsListSnippets="<c-h>"
+let g:UltiSnipsEditSplit="vertical"
 
 " Tabular shortcuts
 nmap <Leader>a :Tabularize /
@@ -97,6 +104,7 @@ runtime macros/matchit.vim
 
 " Session stuff
 let g:session_autoload = 'yes'
+let g:session_autosave = 'no'
 
 " Useful shortcuts
 nmap <S-Enter> O<Esc>j
