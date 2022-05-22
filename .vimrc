@@ -15,7 +15,8 @@ Plugin 'VundleVim/Vundle.vim'
 " plugin on GitHub repo
 Plugin 'tomtom/tcomment_vim'
 Plugin 'Lokaltog/vim-easymotion'
-Plugin 'terryma/vim-multiple-cursors'
+" Plugin 'terryma/vim-multiple-cursors' " no longer supported
+Plugin 'mg979/vim-visual-multi'
 Plugin 'tpope/vim-surround'
 Plugin 'bkad/CamelCaseMotion'
 Plugin 'godlygeek/tabular'
