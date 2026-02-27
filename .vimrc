@@ -27,6 +27,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets' " Useful for Ultisnips
 Plugin 'xolox/vim-session'
+Plugin 'evanleck/vim-svelte'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'JuliaLang/julia-vim'
 Plugin 'plasticboy/vim-markdown'
@@ -291,4 +292,3 @@ autocmd VimEnter * vnoremap <S-Tab> <gv
 
 nnoremap 0 ^
 nnoremap ^ 0
-
