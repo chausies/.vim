@@ -292,3 +292,9 @@ autocmd VimEnter * vnoremap <S-Tab> <gv
 
 nnoremap 0 ^
 nnoremap ^ 0
+
+" Fix kanji freakouts
+set encoding=utf-8
+set fileencodings=ucs-bom,utf-8,default,latin1
+set termencoding=utf-8
+set ambiwidth=double
