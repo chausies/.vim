@@ -298,3 +298,9 @@ set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,default,latin1
 set termencoding=utf-8
 set ambiwidth=double
+
+" Better defaults for windows terminal
+" Cursor shape: block in normal/command mode, vertical bar in insert mode
+let &t_SI = "\e[6 q"   " insert mode → vertical bar
+let &t_SR = "\e[4 q"   " replace mode → underline (optional)
+let &t_EI = "\e[2 q"   " normal/command mode → solid block
